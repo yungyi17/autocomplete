@@ -1,8 +1,9 @@
 $(document).ready(function(){
     var input = $("#theInput")[0];
 
+    /*fetch the data from database and display json format*/
     $.ajax({
-        url:"js/world.json",
+        url:"world_data_display.php",
         success: function(array) {
             
             var currentFocus;
